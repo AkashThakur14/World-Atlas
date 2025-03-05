@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "country_name": "India",
+      "capital": "New Delhi",
+      "population": 1380004385,
+      "interesting_fact": "India is the world's largest democracy."
+    },
+    {
+      "id": 2,
+      "country_name": "United States",
+      "capital": "Washington, D.C.",
+      "population": 331002651,
+      "interesting_fact": "The United States has no official language at the federal level."
+    },
+    {
+      "id": 3,
+      "country_name": "Canada",
+      "capital": "Ottawa",
+      "population": 37742154,
+      "interesting_fact": "Canada has the longest coastline of any country in the world."
+    },
+    {
+      "id": 4,
+      "country_name": "Germany",
+      "capital": "Berlin",
+      "population": 83783942,
+      "interesting_fact": "Germany is home to the world's oldest beer purity law, dating back to 1516."
+    },
+    {
+      "id": 5,
+      "country_name": "Japan",
+      "capital": "Tokyo",
+      "population": 126476461,
+      "interesting_fact": "Japan has more than 6,800 islands."
+    },
+    {
+      "id": 6,
+      "country_name": "Brazil",
+      "capital": "Brasília",
+      "population": 212559417,
+      "interesting_fact": "Brazil is home to the Amazon Rainforest, which produces 20% of the world's oxygen."
+    },
+    {
+      "id": 7,
+      "country_name": "Australia",
+      "capital": "Canberra",
+      "population": 25499884,
+      "interesting_fact": "Australia is the only country that is also a continent."
+    },
+    {
+      "id": 8,
+      "country_name": "United Kingdom",
+      "capital": "London",
+      "population": 67886011,
+      "interesting_fact": "The UK is home to the oldest operating underground railway system, the London Underground."
+    },
+    {
+      "id": 9,
+      "country_name": "France",
+      "capital": "Paris",
+      "population": 65273511,
+      "interesting_fact": "France is the most visited country in the world."
+    },
+    {
+      "id": 10,
+      "country_name": "South Africa",
+      "capital": "Pretoria, Cape Town, Bloemfontein",
+      "population": 59308690,
+      "interesting_fact": "South Africa has three capital cities, each serving different governmental purposes."
+    }
+  ]
+  

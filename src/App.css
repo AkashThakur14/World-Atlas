@@ -63,7 +63,7 @@ button a {
    max-width: 1320px;
    width: 100%;
    margin: 0 auto;
-   padding: 0 15px;
+   padding: 0 30px;
 }
 
 /* header css starts from here  */
@@ -71,7 +71,7 @@ header {
     background: #333;
     color: white;
     padding: 15px 0;
-    box-shadow: #fff 0px 10px 10px -10px;
+    border-bottom: #fff 1px solid;
 }
 
 
@@ -134,7 +134,7 @@ nav ul li a:hover {
 .hero-section {
     display: flex;
     justify-content: center;
-    min-height: 100vh;
+    padding: 40px 0;
 }
 
 .inner-section {
@@ -142,8 +142,8 @@ nav ul li a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
-    padding: 40px;
+    gap: 40px;
+    /* padding: 40px; */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -155,9 +155,9 @@ nav ul li a:hover {
 }
 
 .left-content h2 {
-    font-size: 40px;
+    font-size: 42px;
     margin-bottom: 15px;
-
+letter-spacing: 2px;
 }
 
 .left-content p {
@@ -167,13 +167,12 @@ nav ul li a:hover {
 
 .btn {
     display: inline-block;
-    padding: 12px 20px;
+    padding: 5px 16px;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: background 0.3s ease;
 }
 
 .btn:hover {
@@ -199,7 +198,7 @@ nav ul li a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     .inner-section {
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
         padding: 30px;
     }
@@ -241,5 +240,67 @@ nav ul li a:hover {
 
     .right-content img {
         max-width: 85%;
+    }
+}
+/* About Section */
+.about-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Title */
+.about-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Gradient Card */
+.gradient-card {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Card */
+.card {
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Card Title */
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Card Description */
+.card-desc {
+    font-weight: bold;
+    color: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 24px;
+    }
+
+    .card {
+        max-width: 100%;
     }
 }
