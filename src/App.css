@@ -108,6 +108,9 @@ nav ul li a:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    .container{
+        padding: 0 15px;
+    }
     .navbar-flex {
         flex-direction: column;
         text-align: center;
@@ -197,6 +200,9 @@ letter-spacing: 2px;
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .hero-section {
+        padding: 0;
+    }
     .inner-section {
         flex-direction: column-reverse;
         text-align: center;
@@ -303,4 +309,5 @@ letter-spacing: 2px;
     .card {
         max-width: 100%;
     }
+   
 }
