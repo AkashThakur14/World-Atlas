@@ -1,0 +1,18 @@
+
+[
+    {
+        "icon": "MdPlace",
+        "title": "Find us",
+        "details": "Mohali"
+    },
+    {
+        "icon": "IoCallSharp",
+        "title": "Call us",
+        "details": "9988385532"
+    },
+    {
+        "icon": "TbMailPlus",
+        "title": "Mail us",
+        "details": "ak9988385532@gmail.com"
+    }
+]

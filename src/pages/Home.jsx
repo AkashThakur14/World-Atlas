@@ -1,4 +1,4 @@
-import { FaLongArrowAltDown, FaLongArrowAltRight } from "react-icons/fa";
+import { FaLongArrowAltRight } from "react-icons/fa";
 import { About } from "./About";
 
 export const Home = () => {
