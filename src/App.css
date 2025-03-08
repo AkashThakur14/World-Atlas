@@ -628,7 +628,7 @@ footer {
 }
 
 .country-section {
-  padding: 50px 0;
+  padding: 50px 20px;
 }
 
 .countries-card {
@@ -684,6 +684,7 @@ footer {
     flex: 1 1 30%;
     max-width: 30%;
   }
+ 
 }
 
 @media (max-width: 768px) {
@@ -691,6 +692,7 @@ footer {
     flex: 1 1 45%;
     max-width: 45%;
   }
+  
 }
 
 @media (max-width: 480px) {
