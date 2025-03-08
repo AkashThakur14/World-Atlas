@@ -7,17 +7,16 @@
 html {
   font-size: 10px;
   font-family: "Urbanist", sans-serif;
+
 }
 
-/* body {
-    background-color: #000;
-} */
 body {
   background-color: #f8fafc;
   color: #374151;
-  font-family: "Arial", sans-serif;
 }
-
+html,body{
+  overflow-x: hidden;
+}
 h1,
 h2,
 h3,
@@ -127,16 +126,7 @@ header {
     .container {
       padding: 0 15px;
     }
-    .navbar-flex {
-      flex-direction: column;
-      text-align: center;
-    }
   
-    nav ul {
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 10px;
-    }
   }
   
   @media (max-width: 480px) {
@@ -149,6 +139,37 @@ header {
     }
   }
   
+  /* responsive menu  */
+  .han-menu{
+    display: none;
+  }
+
+  @media  screen and (max-width:998px) {
+    .menu-web{
+      display: none;
+    }
+    .han-menu{
+      display: flex;
+      justify-content: flex-end;
+    }
+    .menu-mobile{
+      position: absolute;
+      top:68px;
+      left: 0;
+      background-color: #6883ce;
+      width: 100%;
+      box-shadow: #5b5151 0px 14px 28px;
+    }
+    .menu-mobile ul{
+     display: flex;
+     flex-direction: column;
+    }
+    .menu-mobile ul li{
+      padding: 10px 0;
+  margin: 20px 0;
+    }
+
+  }
 
 /* hero section style starts form here  */
 .hero-section {
