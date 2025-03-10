@@ -3,16 +3,19 @@
     {
         "icon": "MdPlace",
         "title": "Find us",
-        "details": "Mohali"
+        "details": "Pathankot",
+        "link": " https://maps.app.goo.gl/TnAe7rY5j6WVyQwq9"
     },
     {
         "icon": "IoCallSharp",
         "title": "Call us",
-        "details": "9988385532"
+        "details": "9988385532",
+        "link": "tel:9988385532"
     },
     {
         "icon": "TbMailPlus",
         "title": "Mail us",
-        "details": "ak9988385532@gmail.com"
+        "details": "ak9988385532@gmail.com",
+        "link": "mailto:ak9988385532@mail.com"
     }
 ]
