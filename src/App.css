@@ -448,6 +448,7 @@ header {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  justify-content: space-between;
 }
 
 /* .footer-section {
@@ -531,15 +532,6 @@ footer {
     justify-content: center;
     max-width: 90%;
   }
-
-<<<<<<< HEAD
-    .footer-bottom {
-        font-size: 12px;
-    }
-}
-
-
-=======
   .footer-bottom {
     font-size: 12px;
   }
@@ -709,4 +701,3 @@ footer {
     max-width: 100%;
   }
 }
->>>>>>> 3914354e7e575f236a0587a93609b02e4ec7535b
