@@ -1,10 +1,14 @@
 import { useEffect, useState, useTransition } from "react";
 import { getCountryData } from "../api/postApi";
-import {CountryCard} from "../components/layout/CountryCard"
+import { CountryCard } from "../components/layout/CountryCard"
+import { SearchFilter } from "../components/layout/SearchFilter"
 
 export const Country = () => {
     const [isPending, startTransition] = useTransition();
     const [countries, setCountries] = useState([]);
+
+    const [search, setSearch] = useState();
+    const [filter, setFilter] = useState("all");
 
 
     useEffect(() => {
@@ -16,31 +20,54 @@ export const Country = () => {
         })
     }, []);
 
-
-
     if (isPending) {
         return (
-            <div className="loader"></div>
+            <div className="wrapper">
+                <div className="loader"></div>
+            </div>
         )
+
     }
+
+    // console.log(search, filter)
+
+    const SearchCountry = (country) => {
+        {
+            if (search) {
+                return country.name.common.toLowerCase().includes(search.toLowerCase())
+            } else {
+                return country;
+            }
+        }
+
+    }
+
+    const FilterRegion = (country) => {;
+        return filter === "all" || country.region.toLowerCase() === filter.toLowerCase();
+    };
+
+
+    // here is the main logic of search and filter 
+    const filterCountry = countries.filter((country) => SearchCountry(country) && FilterRegion(country));
+
 
 
     return (
         <section className="country-section container">
-            
 
-                <ul className="countries-card four-col">
-                    {
-                        countries.map((currentCountry,index) => {
-                            return(
-                                <CountryCard country = {currentCountry} key={index} />
+            <SearchFilter search={search} setSearch={setSearch}
+                filter={filter} setFilter={setFilter} />
+
+            <ul className="countries-card four-col">
+                {
+                    filterCountry.map((currentCountry, index) => {
+                        return (
+                            <CountryCard country={currentCountry} key={index} />
                         )
-
-                        })
-                    }
-                </ul>
+                    })
+                }
+            </ul>
 
         </section>
-
     )
 }
